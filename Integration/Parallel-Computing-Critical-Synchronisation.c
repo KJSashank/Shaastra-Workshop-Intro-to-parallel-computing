@@ -10,7 +10,7 @@ void main()
     double sum = 0.0;
     double step = 1.0/(double) num_steps;
     double aux,pi;
-    int i,num_steps;
+    int i,num_steps=100;
 #pragma omp parallel private(i,x,aux) shared(sum) 
    {
 #pragma omp for
