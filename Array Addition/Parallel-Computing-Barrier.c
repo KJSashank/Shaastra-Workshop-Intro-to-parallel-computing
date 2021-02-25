@@ -10,6 +10,10 @@ void main()
         for(i=0;i<100;i++){
                 a[i]=i;
                 b[i]=0;
+                c[i]=0;
+        }
+        for(i=0;i<50;i++){
+               d[i]=0;
         }
         #pragma omp parallel for num_threads(4)
         for(i=0;i<100;i++){
