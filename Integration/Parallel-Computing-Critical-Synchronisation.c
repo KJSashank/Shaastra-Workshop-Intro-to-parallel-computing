@@ -1,4 +1,4 @@
-```
+
 #include<stdlib.h>
 #include<stdio.h>
 #include<omp.h>
@@ -24,4 +24,3 @@ void main()
    pi=step*sum;
    printf("%f", pi);
 }
-```
