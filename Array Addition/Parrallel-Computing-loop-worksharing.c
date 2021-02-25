@@ -1,7 +1,7 @@
 #include<stdlib.h>
 #include<conio.h>
 #include<stdio.h>
-#inlcude<omp.h>
+#include<omp.h>
 
 #define NUM_THREADS 2
 void main()
@@ -15,7 +15,7 @@ void main()
     }
   #pragma omp parallel for num_threads(NUM_THREADS)
   {
-    for(i=id;i<10;i++){
+    for(i=0;i<10;i++){
       c[i]=a[i]+b[i];
     }
   }
