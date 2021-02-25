@@ -1,5 +1,6 @@
 #include<stdlib.h>
 #include<stdio.h>
+#define N 100
 int A[N][N];
 int B[N][N];
 int C[N][N];
