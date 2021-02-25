@@ -11,6 +11,7 @@ void main()
     for(i=0;i<10;i++){
       a[i]=i;
       b[i]=i*i;
+      c[i]=0;
     }
   #pragma omp parallel for num_threads(NUM_THREADS)
   {
