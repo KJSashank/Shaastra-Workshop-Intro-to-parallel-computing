@@ -1,10 +1,13 @@
-``` 
-x=0;
-    sum = 0.0;
-    step = 1.0/(double) num_steps;
+``` #include<stdlib.h>
+    #include<conio.h>
+    #include<stdio.h>
+    double x=0;
+    double sum = 0.0;
+    double step = 1.0/(double) num_steps;
     for (i=0; i < num_steps; ++i) {
         x = (i+0.5)*step;
         sum = sum + 4.0/(1.0+x*x);
     }
-    pi = step * sum; 
+    double pi = step * sum; 
+    printf("%f",pi);
 ```
