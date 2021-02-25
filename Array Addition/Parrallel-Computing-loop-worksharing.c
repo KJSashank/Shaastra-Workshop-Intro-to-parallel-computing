@@ -12,7 +12,7 @@ void main()
       a[i]=i;
       b[i]=i*i;
     }
-  #pragma parallel for num_threads(NUM_THREADS)
+  #pragma omp parallel for num_threads(NUM_THREADS)
   {
     for(i=id;i<10;i++){
       c[i]=a[i]+b[i];
